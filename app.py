@@ -12,7 +12,7 @@ binary_model = load_model("models/binary_classifier_2.h5")
 type_model_path = "models/type_classifier.h5"
 type_model = load_model(type_model_path) if os.path.exists(type_model_path) else None
 
-yolo_model_path = "models/yolov8_taco.pt"
+yolo_model_path = "models/detector.pt"
 yolo_model = YOLO(yolo_model_path) if os.path.exists(yolo_model_path) else None
 
 class_mapping_path = "utils/class_mapping.json"
