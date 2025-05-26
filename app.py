@@ -55,7 +55,7 @@ def predict():
         temp_path = "temp_input.jpg"
         img.save(temp_path)
 
-        results = yolo_model.predict(source=temp_path, save=False, conf=0.3)
+        results = yolo_model.predict(source=temp_path, save=False, conf=0.1)
 
         for r in results:
             for box in r.boxes:
